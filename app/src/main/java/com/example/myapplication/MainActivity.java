@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
        btn.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
+               testSortMethod();
                Intent tent = new Intent(MainActivity.this,TestActivity.class);
                startActivity(tent);
            }
@@ -31,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void testSortMethod(){
+        Algorithm algorithm = new Algorithm();
+        int[] arr1 = {45,64,234,17,7,23};
+        algorithm.selectSort(arr1);
+        int[] arr2 = {145,64,234,17,7,23};
+        algorithm.insertSort(arr2);
+        int[] arr3 = {545,64,234,17,7,23};
+        algorithm.buddleSort(arr1);
+    }
     
 
 }
