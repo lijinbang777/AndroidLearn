@@ -10,4 +10,13 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
     }
+    /**
+     * 这周学习控件篇
+     * Recycleview
+     * ListView
+     * 单双选视图
+     * .9图片
+     * EditText
+     * Drawable 资源图片
+     */
 }
